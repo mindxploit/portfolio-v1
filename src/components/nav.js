@@ -29,24 +29,29 @@ const NavBar = styled.nav`
     }
   }
   @media (max-width: 600px) {
+    padding: 2em 0 1em 0;
     .burger {
       float: right;
       display: block;
     }
     ul {
+      width: 100%;
       display: ${props => (props.show ? "flex" : "none")};
       flex-direction: column;
       text-align: center;
       padding: 0;
     }
+    li {
+      margin-top: 1em;
+    }
     a {
-      margin: 0;
+      margin: 1em 0;
     }
   }
 `
 
 const Nav = () => {
-  const [isExpanded, setisExpanded] = useState(true)
+  const [isExpanded, setisExpanded] = useState(false)
   const handleClick = () => {
     setisExpanded(!isExpanded)
     console.log("clicked")
@@ -54,7 +59,8 @@ const Nav = () => {
 
   return (
     <Fade top delay={2000} duration={2000}>
-      <NavBar>
+      <NavBar show={isExpanded}>
+        <FaBars onClick={() => handleClick()} className="burger" size="2em" />
         <ul>
           <li>
             <Link to="works" smooth={true} duration={500}>
@@ -70,7 +76,6 @@ const Nav = () => {
             <a href="#">Resume</a>
           </li>
         </ul>
-        <FaBars onClick={() => handleClick()} className="burger" size="2em" />
       </NavBar>
     </Fade>
   )

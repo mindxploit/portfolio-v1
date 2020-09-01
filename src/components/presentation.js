@@ -37,7 +37,12 @@ const Main = styled.div`
 
 const IconsWrapper = styled.div`
   a {
-    color: white;
+    color: rgba(255, 255, 255, 0.8);
+    trasition: 0.2s;
+    transition-timing-function: ease-in;
+    &:hover {
+      color: rgba(255, 255, 255, 1);
+    }
   }
 `
 
