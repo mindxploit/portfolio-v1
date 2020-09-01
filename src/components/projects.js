@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 `
 
 const Title = styled.h1`
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
   margin: 0;
   margin-bottom: 2em;
@@ -44,7 +44,7 @@ const Text = styled.div`
   text-align: right;
   width: 100%;
   h2 {
-    font-size: 2.25rem;
+    font-size: 2.4rem;
     font-weight: 600;
   }
 

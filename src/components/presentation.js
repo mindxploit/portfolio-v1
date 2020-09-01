@@ -25,7 +25,7 @@ const Main = styled.div`
 
   h2 {
     max-width: 777px;
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.87);
   }

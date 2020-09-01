@@ -3,7 +3,7 @@ import styled from "styled-components"
 import Fade from "react-reveal/Fade"
 
 const Title = styled.h1`
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
   margin: 1em 0;
   @media (max-width: 480px) {
