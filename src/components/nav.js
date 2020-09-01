@@ -54,14 +54,13 @@ const Nav = () => {
   const [isExpanded, setisExpanded] = useState(false)
   const handleClick = () => {
     setisExpanded(!isExpanded)
-    console.log("clicked")
   }
 
   return (
     <Fade top delay={2000} duration={2000}>
       <NavBar show={isExpanded}>
         <FaBars onClick={() => handleClick()} className="burger" size="2em" />
-        <Fade when={isExpanded}>
+        <Fade appear spy={isExpanded}>
           <ul>
             <li>
               <Link to="works" smooth={true} duration={500}>
