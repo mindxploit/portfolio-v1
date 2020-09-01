@@ -33,6 +33,18 @@ const Main = styled.div`
   span {
     font-weight: normal;
   }
+
+  @media (max-width: 400px) {
+    h1 {
+      font-size: 5rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
 `
 
 const IconsWrapper = styled.div`
