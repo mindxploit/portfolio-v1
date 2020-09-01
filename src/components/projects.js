@@ -64,6 +64,18 @@ const Text = styled.div`
   @media (min-width: 800px) {
     margin-left: 1em;
   }
+
+  @media (max-width: 400px) {
+    h1 {
+      font-size: 5rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
 `
 
 const Tech = styled.div`
@@ -76,7 +88,6 @@ const Tech = styled.div`
   }
   @media (min-width: 800px) {
     margin-top: 4em;
-    font-size: 1rem;
     p {
       margin-left: 2em;
     }

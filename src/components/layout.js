@@ -16,7 +16,6 @@ const GlobalStyle = createGlobalStyle`
     color: white;
     font-family: 'Open Sans';
   }
-
 `
 export default function Layout({ children }) {
   return (
