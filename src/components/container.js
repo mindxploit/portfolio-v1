@@ -6,7 +6,6 @@ const ContDiv = styled.div`
   margin: 0 auto;
   height: ${props => (props.full ? "100vh" : null)};
   @media (max-width: 480px) {
-    height: 100%;
     padding-bottom: 4em;
   }
 `
