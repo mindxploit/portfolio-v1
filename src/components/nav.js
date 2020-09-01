@@ -61,21 +61,23 @@ const Nav = () => {
     <Fade top delay={2000} duration={2000}>
       <NavBar show={isExpanded}>
         <FaBars onClick={() => handleClick()} className="burger" size="2em" />
-        <ul>
-          <li>
-            <Link to="works" smooth={true} duration={500}>
-              Works
-            </Link>
-          </li>
-          <li>
-            <Link to="contact" smooth={true} duration={500}>
-              Contact
-            </Link>
-          </li>
-          <li>
-            <a href="#">Resume</a>
-          </li>
-        </ul>
+        <Fade when={isExpanded}>
+          <ul>
+            <li>
+              <Link to="works" smooth={true} duration={500}>
+                Works
+              </Link>
+            </li>
+            <li>
+              <Link to="contact" smooth={true} duration={500}>
+                Contact
+              </Link>
+            </li>
+            <li>
+              <a href="#">Resume</a>
+            </li>
+          </ul>
+        </Fade>
       </NavBar>
     </Fade>
   )
