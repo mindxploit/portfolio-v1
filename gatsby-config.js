@@ -28,21 +28,6 @@ module.exports = {
     },
     `gatsby-plugin-styled-components`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Open Sans`,
-            variants: ["300", `400`, "600", `700`],
-          },
-          {
-            family: `Fira Mono`,
-            variants: [`400`],
-          },
-        ],
-      },
-    },
-    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
