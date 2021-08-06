@@ -4,7 +4,6 @@ import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import { AiFillGithub } from "react-icons/ai"
 import { BiLinkExternal } from "react-icons/bi"
-import { motion } from "framer-motion"
 import Fade from "react-reveal/Fade"
 
 const Wrapper = styled.div`
@@ -144,7 +143,7 @@ const Projects = () => {
           <Text>
             <h2>Easy Chord</h2>
             <p>
-              A web application that helps musicians in the process of making
+              A web application that helps musicians in the process of learning music theory and
               chord progressions.
             </p>
             <Tech>
@@ -189,34 +188,6 @@ const Projects = () => {
             <a
               rel="noreferrer"
               href="https://mindxploit.github.io/lasles-vpn-landing-page/"
-              target="_blank"
-            >
-              <BiLinkExternal size="2em" />
-            </a>
-          </Text>
-        </Card>
-      </Fade>
-      <Fade bottom>
-        <Card>
-          <Img fluid={data.imageMovie.childImageSharp.fluid} />
-          <Text>
-            <h2>Movie Watchlist</h2>
-            <p>Find any movie and create your custom watchlist.</p>
-            <Tech>
-              <p>react-js</p>
-              <p>material-ui</p>
-              <p>TMDb Api</p>
-            </Tech>
-            <a
-              rel="noreferrer"
-              href="https://github.com/mindxploit/movie-watchlist"
-              target="_blank"
-            >
-              <AiFillGithub size="2em" />
-            </a>
-            <a
-              rel="noreferrer"
-              href="https://mindxploit.github.io/movie-watchlist/"
               target="_blank"
             >
               <BiLinkExternal size="2em" />

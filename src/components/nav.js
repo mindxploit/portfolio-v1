@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import styled from "styled-components"
 import Fade from "react-reveal/Fade"
 import { FaBars } from "react-icons/fa"
-import { Link, animateScroll as scroll } from "react-scroll"
+import { Link } from "react-scroll"
 
 const NavBar = styled.nav`
   padding-top: 3em;
@@ -72,9 +72,9 @@ const Nav = () => {
                 Contact
               </Link>
             </li>
-            <li>
+            {/* <li>
               <a href="#">Resume</a>
-            </li>
+            </li> */}
           </ul>
         </Fade>
       </NavBar>

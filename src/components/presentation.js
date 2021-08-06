@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { FiInstagram } from "react-icons/fi"
+// import { FiInstagram } from "react-icons/fi"
 import { AiFillGithub } from "react-icons/ai"
 import { FiMail } from "react-icons/fi"
 import Fade from "react-reveal/Fade"
@@ -50,7 +50,7 @@ const Main = styled.div`
 const IconsWrapper = styled.div`
   a {
     color: rgba(255, 255, 255, 0.8);
-    trasition: 0.2s;
+    transition: 0.2s;
     transition-timing-function: ease-in;
     &:hover {
       color: rgba(255, 255, 255, 1);
@@ -80,9 +80,9 @@ const Presentation = () => {
           <a href="https://github.com/mindxploit">
             <AiFillGithub size="2em" style={{ marginRight: 20 }} />
           </a>
-          <a href="#">
+          {/* <a href="#">
             <FiInstagram size="2em" style={{ marginRight: 20 }} />
-          </a>
+          </a> */}
           <a href="mailto:bobbonicola@gmail.com">
             <FiMail size="2em" style={{ marginRight: 20 }} />
           </a>

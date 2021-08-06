@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Portfolio`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Personal portfolio`,
     author: `@nicolabobbo`,
   },
   plugins: [
@@ -39,6 +39,15 @@ module.exports = {
             family: `Fira Mono`,
             variants: [`400`],
           },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Open Sans\:300,400,600,700`,
+          `Fira Mono\:400`
         ],
       },
     },

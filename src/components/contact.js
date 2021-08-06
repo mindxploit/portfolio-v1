@@ -56,9 +56,9 @@ const Contact = () => {
               <Btn>Contact</Btn>
             </a>
           </motion.div>
-          <motion.div whileHover={{ scale: 1.1 }}>
+          {/* <motion.div whileHover={{ scale: 1.1 }}>
             <Btn>Resume</Btn>
-          </motion.div>
+          </motion.div> */}
         </ButtonFlex>
       </Fade>
     </Wrap>
