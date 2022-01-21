@@ -129,6 +129,17 @@ const Projects = () => {
           }
         }
       }
+      imageScraper: file(relativePath: { eq: "projects/scraper.png" }) {
+        id
+        childImageSharp {
+          fixed {
+            ...GatsbyImageSharpFixed
+          }
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -160,6 +171,36 @@ const Projects = () => {
             <a
               rel="noreferrer"
               href="https://mindxploit.github.io/EasyChord/"
+              target="_blank"
+            >
+              <BiLinkExternal size="2em" />
+            </a>
+          </Text>
+        </Card>
+      </Fade>
+      <Fade bottom>
+        <Card>
+          <Img fluid={data.imageScraper.childImageSharp.fluid} />
+          <Text>
+            <h2>Science Scraper</h2>
+            <p>
+              See the most recent science articles. All the data has been scraped and is visible while logged in.
+            </p>
+            <Tech>
+              <p>cheerio</p>
+              <p>firebase</p>
+              <p>react-js</p>
+            </Tech>
+            <a
+              rel="noreferrer"
+              href="https://github.com/mindxploit/scienceArticlesScraper"
+              target="_blank"
+            >
+              <AiFillGithub size="2em" />
+            </a>
+            <a
+              rel="noreferrer"
+              href="https://science-articles-scraper.vercel.app/"
               target="_blank"
             >
               <BiLinkExternal size="2em" />
