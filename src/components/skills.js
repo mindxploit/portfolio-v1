@@ -43,16 +43,17 @@ const Skills = () => {
         <Fade bottom cascade>
           <Block>
             <h2>Coding</h2>
-            <p>Javascript (ES6)</p>
-            <p>HTML</p>
-            <p>CSS</p>
+            <p>Javascript (ES6) / Typescript</p>
+            <p>Webflow</p>
+            <p>HTML/CSS</p>
             <p>Git & Github</p>
           </Block>
           <Block>
             <h2>Frameworks</h2>
             <p>React.js</p>
             <p>Material-ui</p>
-            <p>Styled components</p>
+            <p>Next.js</p>
+            <p>Styled-components</p>
             <p>Bootstrap</p>
             <p>Gatsby.js</p>
             <p>p5.js</p>
@@ -65,10 +66,9 @@ const Skills = () => {
           </Block>
           <Block>
             <h2>Interested in</h2>
-            <p>Python</p>
+            <p>Cryptocurrency and DeFi</p>
             <p>Cyber Security</p>
-            <p>Framer Motion</p>
-            <p>Vue.js</p>
+            <p>AI</p>
           </Block>
         </Fade>
       </FlexWrap>
