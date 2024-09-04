@@ -44,17 +44,21 @@ const Skills = () => {
           <Block>
             <h2>Coding</h2>
             <p>Javascript (ES6) / Typescript</p>
+            <p>Solidity</p>
             <p>Webflow</p>
             <p>HTML/CSS</p>
+            <p>Graphql</p>
             <p>Git & Github</p>
           </Block>
           <Block>
             <h2>Frameworks</h2>
             <p>React.js</p>
-            <p>Material-ui</p>
             <p>Next.js</p>
+            <p>Material-ui</p>
+            <p>Chakra-ui</p>
             <p>Styled-components</p>
             <p>Bootstrap</p>
+            <p>Tailwind css</p>
             <p>Gatsby.js</p>
             <p>p5.js</p>
           </Block>
@@ -66,7 +70,7 @@ const Skills = () => {
           </Block>
           <Block>
             <h2>Interested in</h2>
-            <p>Cryptocurrency and DeFi</p>
+            <p>Crypto and DeFi</p>
             <p>Cyber Security</p>
             <p>AI</p>
           </Block>

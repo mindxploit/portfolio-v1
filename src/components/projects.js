@@ -36,6 +36,7 @@ const Card = styled.div`
     .gatsby-image-wrapper {
       width: 100%;
     }
+    gap: 2rem;
   }
 `
 
@@ -74,6 +75,22 @@ const Text = styled.div`
     p {
       font-size: 1.5rem;
     }
+  }
+`
+
+const ProjectName = styled.a`
+  font-size: 2.2rem;
+  font-weight: 600;
+
+  @media (max-width: 400px) {
+    a {
+      font-size: 2rem;
+    }
+  }
+
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
   }
 `
 
@@ -151,6 +168,17 @@ const Projects = () => {
           }
         }
       }
+      imageGiexpo: file(relativePath: { eq: "projects/giexpo.png" }) {
+        id
+        childImageSharp {
+          fixed {
+            ...GatsbyImageSharpFixed
+          }
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -163,7 +191,13 @@ const Projects = () => {
         <Card>
           <Img fluid={data.imageMorocco.childImageSharp.fluid} />
           <Text>
-            <h2>Morocco Atlantis Journeys</h2>
+            <ProjectName
+              rel="noreferrer"
+              href="https://moroccoatlantisjourneys.com/"
+              target="_blank"
+            >
+              Morocco Atlantis Journeys
+            </ProjectName>
             <p>
               Business website for an experiences and tours provider in Morocco.
             </p>
@@ -182,10 +216,18 @@ const Projects = () => {
             </a>
           </Text>
         </Card>
+      </Fade>
+      <Fade bottom>
         <Card>
           <Img fluid={data.imageKosko.childImageSharp.fluid} />
           <Text>
-            <h2>KOSKO</h2>
+            <ProjectName
+              rel="noreferrer"
+              href="https://www.kosko.it/"
+              target="_blank"
+            >
+              KOSKO
+            </ProjectName>
             <p>
               MVP of Kosko, a platform that enables you to create better teams
               through the analysis of personality.{" "}
@@ -193,9 +235,36 @@ const Projects = () => {
             <Tech>
               <p>react-js</p>
               <p>chart.js</p>
+              <p>graphql</p>
               <p></p>
             </Tech>
             <a rel="noreferrer" href="https://www.kosko.it/" target="_blank">
+              <BiLinkExternal size="2em" />
+            </a>
+          </Text>
+        </Card>
+      </Fade>
+      <Fade bottom>
+        <Card>
+          <Img fluid={data.imageGiexpo.childImageSharp.fluid} />
+          <Text>
+            <ProjectName
+              rel="noreferrer"
+              href="https://dribbble.com/shots/24804301-GiEXPO-Blockchain-Exposition-Conference?utm_source=Clipboard_Shot&utm_campaign=mindxploit&utm_content=GiEXPO%20-%20Blockchain%20Exposition%20Conference&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=mindxploit&utm_content=GiEXPO%20-%20Blockchain%20Exposition%20Conference&utm_medium=Social_Share"
+              target="_blank"
+            >
+              GiEXPO
+            </ProjectName>
+            <p>Landing page design for blockchain event. </p>
+            <Tech>
+              <p>figma</p>
+              <p>ui design</p>
+            </Tech>
+            <a
+              rel="noreferrer"
+              href="https://dribbble.com/shots/24804301-GiEXPO-Blockchain-Exposition-Conference?utm_source=Clipboard_Shot&utm_campaign=mindxploit&utm_content=GiEXPO%20-%20Blockchain%20Exposition%20Conference&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=mindxploit&utm_content=GiEXPO%20-%20Blockchain%20Exposition%20Conference&utm_medium=Social_Share"
+              target="_blank"
+            >
               <BiLinkExternal size="2em" />
             </a>
           </Text>
@@ -206,7 +275,13 @@ const Projects = () => {
           <Card>
             <Img fluid={data.imageChord.childImageSharp.fluid} />
             <Text>
-              <h2>Easy Chord</h2>
+              <ProjectName
+                rel="noreferrer"
+                href="https://mindxploit.github.io/EasyChord/"
+                target="_blank"
+              >
+                Easy Chord
+              </ProjectName>
               <p>
                 A web application that helps musicians in the process of
                 learning music theory and chord progressions.
@@ -235,7 +310,13 @@ const Projects = () => {
         <Card>
           <Img fluid={data.imageVpn.childImageSharp.fluid} />
           <Text>
-            <h2>Lasles VPN</h2>
+            <ProjectName
+              rel="noreferrer"
+              href="https://github.com/mindxploit/lasles-vpn-landing-page"
+              target="_blank"
+            >
+              Lasles VPN
+            </ProjectName>
             <p>From UI design to fully responsive static landing page.</p>
             <Tech>
               <p>html</p>
