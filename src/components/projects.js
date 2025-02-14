@@ -168,7 +168,7 @@ const Projects = () => {
           }
         }
       }
-      imageGiexpo: file(relativePath: { eq: "projects/giexpo.png" }) {
+      imageGiexpo: file(relativePath: { eq: "projects/giexpo-01-main.png" }) {
         id
         childImageSharp {
           fixed {
@@ -223,7 +223,7 @@ const Projects = () => {
           <Text>
             <ProjectName
               rel="noreferrer"
-              href="https://www.kosko.it/"
+              href="https://www.figma.com/design/NKFRNrFLBNnTiydWFZ3jGW/KOSKO-(Copy)?node-id=1-2"
               target="_blank"
             >
               KOSKO
@@ -238,7 +238,11 @@ const Projects = () => {
               <p>graphql</p>
               <p></p>
             </Tech>
-            <a rel="noreferrer" href="https://www.kosko.it/" target="_blank">
+            <a
+              rel="noreferrer"
+              href="https://www.figma.com/design/NKFRNrFLBNnTiydWFZ3jGW/KOSKO-(Copy)?node-id=1-2"
+              target="_blank"
+            >
               <BiLinkExternal size="2em" />
             </a>
           </Text>
@@ -248,11 +252,7 @@ const Projects = () => {
         <Card>
           <Img fluid={data.imageGiexpo.childImageSharp.fluid} />
           <Text>
-            <ProjectName
-              rel="noreferrer"
-              href="https://dribbble.com/shots/24804301-GiEXPO-Blockchain-Exposition-Conference?utm_source=Clipboard_Shot&utm_campaign=mindxploit&utm_content=GiEXPO%20-%20Blockchain%20Exposition%20Conference&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=mindxploit&utm_content=GiEXPO%20-%20Blockchain%20Exposition%20Conference&utm_medium=Social_Share"
-              target="_blank"
-            >
+            <ProjectName rel="noreferrer" href="/project/giexpo">
               GiEXPO
             </ProjectName>
             <p>Landing page design for blockchain event. </p>
@@ -260,11 +260,7 @@ const Projects = () => {
               <p>figma</p>
               <p>ui design</p>
             </Tech>
-            <a
-              rel="noreferrer"
-              href="https://dribbble.com/shots/24804301-GiEXPO-Blockchain-Exposition-Conference?utm_source=Clipboard_Shot&utm_campaign=mindxploit&utm_content=GiEXPO%20-%20Blockchain%20Exposition%20Conference&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=mindxploit&utm_content=GiEXPO%20-%20Blockchain%20Exposition%20Conference&utm_medium=Social_Share"
-              target="_blank"
-            >
+            <a rel="noreferrer" href="/project/giexpo" target="_blank">
               <BiLinkExternal size="2em" />
             </a>
           </Text>

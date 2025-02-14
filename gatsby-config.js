@@ -19,10 +19,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `Open Sans\:300,400,600,700`,
-          `Fira Mono\:400`
-        ],
+        fonts: [`Open Sans\:300,400,600,700`, `Fira Mono\:400`],
       },
     },
     {
@@ -32,6 +29,14 @@ module.exports = {
         color: `black`,
         // Disable the loading spinner.
         showSpinner: false,
+      },
+    },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data/`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

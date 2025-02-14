@@ -1,0 +1,13 @@
+[
+  {
+    "slug": "giexpo",
+    "title": "GiEXPO - Blockchain Exposition Conference",
+    "description": "Landing page design for blockchain event",
+    "tech": ["figma", "ui design"],
+    "images": [
+      "projects/giexpo-01-main.png",
+      "projects/giexpo-02-moodboard.png",
+      "projects/giexpo-03-macpreview.png"
+    ]
+  }
+]

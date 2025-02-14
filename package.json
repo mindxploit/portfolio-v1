@@ -19,6 +19,7 @@
     "gatsby-plugin-styled-components": "^3.3.10",
     "gatsby-source-filesystem": "^2.3.24",
     "gatsby-telemetry": "^3.5.2",
+    "gatsby-transformer-json": "^3.0.0",
     "gatsby-transformer-sharp": "^2.5.13",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
